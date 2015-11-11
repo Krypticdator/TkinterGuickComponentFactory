@@ -127,3 +127,19 @@ class TextAndEntryfield(UIObject):
 
     def get(self):
         return self.variable.get()
+
+class EntryField(UIObject):
+    '''basic inputfield wrapped in a class'''
+
+    def __init__(self, master, width_num=15):
+        super().__init__(master)
+        self.variable = StringVar()
+        # self.frame = ttk.Frame(master)
+        self.entry = ttk.Entry(self.frame, textvariable=self.variable, width=width_num)
+        self.entry.grid(column=0, row=0)
+
+    def set(self, value):
+        self.variable.set(str(value))
+
+    def get(self):
+        return self.variable.get()
