@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 __author__ = 'Toni'
+__version__ = "1.0.0"
 
 
 from tkinter import *
