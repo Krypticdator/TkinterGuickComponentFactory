@@ -24,7 +24,7 @@ class UIIDComponent(object):
 
 
 class CustomPanedWindow(UIObject):
-    '''Paned'''
+    '''Paned Window'''
 
     def __init__(self, master, controller, vertical=True):
         super().__init__(master, controller)
